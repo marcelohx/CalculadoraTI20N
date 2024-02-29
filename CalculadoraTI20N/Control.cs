@@ -25,6 +25,9 @@ namespace CalculadoraTI20N
                          "2.Subtrair\n"       +
                          "3.Multiplicar\n"    +
                          "4.Dividir\n"        +
+                         "5.Tabuada\n"        +
+                         "6.Raiz\n"           +
+                         "7.Potência\n"       +
                          "Escolha uma das opções acima:";
             return msg;
         }//fim do Menu
@@ -64,6 +67,18 @@ namespace CalculadoraTI20N
                         {
                             Console.WriteLine("A divisão dos valores digitados é: " + mod.Dividir());
                         }
+                        break;
+                    case 5:
+                        Coletar();
+                        Console.WriteLine("Tabuada:" + mod.Tabuada());
+                        break;
+                    case 6:
+                        Coletar();
+                        Console.WriteLine("Raiz:" + mod.Raiz());
+                        break;
+                    case 7:
+                        Coletar();
+                        Console.WriteLine("A Potência é: " + mod.Potencia());
                         break;
                     default:
                         Console.WriteLine("Escolha uma opção valida!");
